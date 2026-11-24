@@ -151,7 +151,7 @@ def delete_medicine(medicines):
 
 def low_stock_report(medicines):
     print("\n--- Low Stock Report ---")
-    low_stock = [medicine for medicine in medicines if medicine["quantity"] < 10]
+    low_stock = [medicine for medicine in medicines if medicine["Quantity"] < 10]
 
     if not low_stock:
         print("No low-stock medicines.")
